@@ -28,6 +28,53 @@
   color: #61dafb;
 }
 
+#root{width: 50%;}
+#root>div{
+  display: flex; justify-content: center; flex-direction: column;
+  align-items: center;
+}
+ul{
+  padding: 4rem 0;
+  margin: unset;
+  gap: 2rem;
+  display: grid;
+}
+.outterli{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+li{
+  list-style: none;
+  width: 40rem;
+  padding: 1.5rem 5rem;
+  border-radius: 0.7rem;
+  background: #e0e0e0;
+  box-shadow:  20px 20px 60px #bebebe, -20px -20px 60px #ffffff; 
+  transform-style: preserve-3d;      
+}
+li > *{transform: translateZ(4rem);}
+a{color: rgb(24, 102, 247);}
+.back{text-decoration: none;}
+#title{text-transform: capitalize;}
+#body{color: rgba(0, 0, 0, 0.801);}
+.postWrap{padding: 5rem 0rem;width: 43rem;}
+.botRow{
+  display: flex;
+  justify-content: space-between;
+}
+.tilt{
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
+  transform-style: preserve-3d;   
+}
+.loadingWrap{
+  height: 100vh;
+}
+.loading{
+  display: flex;justify-content: center;
+  
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
